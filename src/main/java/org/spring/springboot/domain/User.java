@@ -25,6 +25,17 @@ public class User {
 
     private Work work;
 
+    public User() {
+    }
+
+    public User(Long id, String userName, String description, City city, Work work) {
+        this.id = id;
+        this.userName = userName;
+        this.description = description;
+        this.city = city;
+        this.work = work;
+    }
+
     public Work getWork() {
         return work;
     }

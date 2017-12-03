@@ -11,6 +11,8 @@ public class Work {
     private String company;
     private String name;
 
+//    {"id": "1","workAddress": "北京","company": "北京","name": "常远"}
+
     public Work() {
     }
 

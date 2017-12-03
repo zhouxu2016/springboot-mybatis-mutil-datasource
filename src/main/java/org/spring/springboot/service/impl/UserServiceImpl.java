@@ -28,13 +28,18 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findByName(String userName) {
 
-        User user = userDao.findByName(userName);
+       /* User user = userDao.findByName(userName);
 
         City city = cityDao.findByName("上海市");
         Work work = workDao.findByName("周旭");
 
         user.setCity(city);
-        user.setWork(work);
+        user.setWork(work);*/
+//      Long id, String userName, String description, City city, Work work)
+        City city = new City(1L, 1L, "北京", "北京工作");
+        Work work = new Work(1, "北京", "北京", "常远");
+        User user = new User(1L, "常远", "北京工作", city, work);
+
         return user;
     }
 }

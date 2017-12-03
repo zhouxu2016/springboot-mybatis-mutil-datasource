@@ -26,6 +26,16 @@ public class City {
      */
     private String description;
 
+    public City() {
+    }
+
+    public City(Long id, Long provinceId, String cityName, String description) {
+        this.id = id;
+        this.provinceId = provinceId;
+        this.cityName = cityName;
+        this.description = description;
+    }
+
     public Long getId() {
         return id;
     }
